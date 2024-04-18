@@ -101,7 +101,7 @@ class BankAccount:
         if withdrawal_value == None:
             return
         
-        istoday = self.last_operation_date == str(date.today())
+        istoday = str(self.last_operation_date) == str(date.today())
         if self.daily_withdrawal_count == 3 and istoday:
             print('Daily withdrawal limit reached')
             return
