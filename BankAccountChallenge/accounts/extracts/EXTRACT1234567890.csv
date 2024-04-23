@@ -1,1 +1,5 @@
 Operation,Operation value,Funds before,Funds after,Operation time
+withdrawal,500.0,870.0,370.0,18/04/2024 07:56:14
+deposit,1000.0,370.0,1370.0,18/04/2024 07:56:38
+withdrawal,200.0,1370.0,1170.0,18/04/2024 07:56:45
+withdrawal,100.0,1170.0,1070.0,18/04/2024 08:02:04
