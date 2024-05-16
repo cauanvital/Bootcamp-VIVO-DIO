@@ -126,11 +126,12 @@ class BankAccount:
         
         
     def view_extract(self):
-        extract = csv.DictReader(open(self.EXTRACT, 'r'))
+        extract = list(csv.DictReader(open(self.EXTRACT), delimiter=','))
+            
         print('_' * 79)
         print('Extract'.center(79))
         print('_' * 79)
-        if extract[0]['Operation'] == None:
+        if extract == []:
             print('No operations performed')
         else:
             for extr in extract:
@@ -142,5 +143,5 @@ class BankAccount:
                 print('_' * 79)
         
         print('_' * 79)
-        print(f'Current funds: R$ {self.saldo:.2f}'.center(79))
+        print(f'Current funds: R$ {self.funds:.2f}'.center(79))
         print('_' * 79)
